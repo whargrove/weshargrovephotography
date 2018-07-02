@@ -1,0 +1,26 @@
+# Site settings
+baseurl = "https://www.weshargrove.com/"
+languageCode = "en-us"
+title = "Wes Hargrove Photography - Landscape"
+theme = "hugrid"
+
+contentdir = "content"
+datadir = "data"
+layoutdir = "layouts"
+publishdir = "public"
+
+[params]
+    # Meta
+    title = "Wes Hargrove Photography"
+
+    # Body background color
+    bodybgcolor = "#f9f9f9"
+
+    # Preview container button text
+    buttontext = "Get the theme"
+
+    # Footer text
+    footertext = "tktktk"
+
+    # add extra-css
+    # custom_css = ['css/extra1.css', 'css/extra2.css']
