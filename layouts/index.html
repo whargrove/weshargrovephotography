@@ -3,7 +3,7 @@
   <section class="grid">
     {{ range where .Data.Pages "Section" "photos" }}
     <div class="thumbnail">
-      <img src="{{ .Params.imagesrc }}" />
+      <a href="{{ .Permalink }}"><img src="{{ .Params.imagesrc }}" /></a>
     </div>
     {{ end }}
   </section>
