@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.thumbnail img {
+  max-width: 100%;
+}

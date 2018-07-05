@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main class="main">
+  <section class="grid">
+    {{ range where .Data.Pages "Section" "photos" }}
+    <div class="thumbnail">
+      <img src="{{ .Params.imagesrc }}" />
+    </div>
+    {{ end }}
+  </section>
+</main>
+{{ end }}
