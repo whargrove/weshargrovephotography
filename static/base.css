@@ -5,7 +5,22 @@ body {
   margin: 1em;
 }
 
+header > a {
+  text-decoration: none;
+  text-decoration-color: unset;
+}
+
+header > a:visited {
+  color: black;
+}
+
+header > a > h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
 .main {
+  padding-top: 1em;
   max-width: 100%;
 }
 

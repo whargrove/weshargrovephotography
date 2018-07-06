@@ -13,11 +13,7 @@
 </head>
 <body>
   <header>
-    <h1>Wes Hargrove Photography</h1>
-    <nav>
-      {{ block "nav" . }}
-      {{ end }}
-    </nav>
+    <a href="{{ .Site.BaseURL }}"><h1>Wes Hargrove Photography</h1></a>
   </header>
   {{ block "main" . }}
   {{ end }}
