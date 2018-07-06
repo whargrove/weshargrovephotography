@@ -1,7 +1,11 @@
 {{ define "main" }}
 <main class="main">
-  <img src="{{ .Params.imagesrc }}" />
-  <h2>{{ .Title }}</h2>
-  <p>{{ .Content }}</p>
+  <div id="photo">
+    <img src="{{ .Params.imagesrc }}" alt="{{ .Title }}" />
+  </div>
+  <div id="description">
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Content }}</p>
+  </div>
 </main>
 {{ end }}

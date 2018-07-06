@@ -24,3 +24,29 @@ header > a > h1 {
   max-width: 100%;
 }
 
+#photo {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#photo > img {
+  max-width: 100%;
+}
+
+#description {
+  margin-top: 1em;
+  text-align: center;
+}
+
+#description > h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+#description > p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+}
