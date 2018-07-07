@@ -5,16 +5,16 @@ body {
   margin: 1em;
 }
 
-header > a {
+header > h1 > a {
   text-decoration: none;
   text-decoration-color: unset;
 }
 
-header > a:visited {
+header > h1 > a:visited {
   color: black;
 }
 
-header > a > h1 {
+header > h1 > a {
   font-size: 3rem;
   font-weight: 200;
 }
