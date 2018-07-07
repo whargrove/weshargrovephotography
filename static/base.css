@@ -25,12 +25,18 @@ header > a > h1 {
 }
 
 #photo {
-  max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  max-width: 1000px;
+  justify-content: center;
 }
 
-#photo > img {
+#photo.landscape > img {
   max-width: 100%;
+}
+
+#photo.portrait > img {
+  max-height: 100%;
 }
 
 #description {

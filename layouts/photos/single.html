@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main class="main">
-  <div id="photo">
+  <div id="photo" class="{{ .Params.orientation }}">
     <img src="{{ .Params.imagesrc }}" alt="{{ .Title }}" />
   </div>
   <div id="description">

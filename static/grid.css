@@ -1,6 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 1em;
   column-gap: 1em;
   grid-gap: 1em 1em;
@@ -8,4 +9,9 @@
 
 .thumbnail img {
   max-width: 100%;
+  object-fit: cover;
+}
+
+.grid > .portrait {
+  grid-row: span 2;
 }
