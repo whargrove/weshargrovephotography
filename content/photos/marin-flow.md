@@ -1,7 +1,7 @@
 ---
 title: "Marin Flow"
 # Params
-imagesrc: "https://weshargrovephotography.blob.core.windows.net/storage/marin-flow.jpg"
+imagesrc: "https://weshargrovephotography.azureedge.net/storage/marin-flow.jpg"
 orientation: landscape
 ---
 
