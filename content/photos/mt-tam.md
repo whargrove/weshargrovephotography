@@ -1,7 +1,7 @@
 ---
 title: "Mt Tam"
 # Params
-imagesrc: "https://weshargrovephotography.azureedge.net/storage/mt-tam-ED1FDCBC-18AB-4D5B-8530-AA4EFEDA77FC"
+imagesrc: "https://cdn.weshargrove.com/storage/mt-tam-ED1FDCBC-18AB-4D5B-8530-AA4EFEDA77FC"
 orientation: landscape
 ---
 
