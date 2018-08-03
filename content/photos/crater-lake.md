@@ -1,7 +1,7 @@
 ---
 title: "Crater Lake"
 # Params
-imagesrc: "https://cdn.weshargrove.com/storage/crater-lake.jpg"
+imagesrc: "https://cdn.weshargrove.com/portfolio/crater-lake.jpg"
 orientation: landscape
 ---
 

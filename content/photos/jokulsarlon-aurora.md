@@ -1,7 +1,7 @@
 ---
 title: "Jökulsárlón Aurora"
 # Params
-imagesrc: "https://cdn.weshargrove.com/storage/jokulsarlon-aurora.jpg"
+imagesrc: "https://cdn.weshargrove.com/portfolio/jokulsarlon-aurora.jpg"
 orientation: landscape
 ---
 

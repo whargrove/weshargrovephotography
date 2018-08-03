@@ -1,7 +1,7 @@
 ---
 title: "Mt Tam"
 # Params
-imagesrc: "https://cdn.weshargrove.com/storage/mt-tam.jpg"
+imagesrc: "https://cdn.weshargrove.com/portfolio/mt-tam.jpg"
 orientation: landscape
 ---
 
