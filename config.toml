@@ -5,3 +5,6 @@ title = "Wes Hargrove Photography - Landscape"
 contentDir = "content"
 layoutDir = "layouts"
 publishDir = "build"
+
+[params]
+  cdnUrl = "https://cdn.weshargrove.com"

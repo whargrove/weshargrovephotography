@@ -1,7 +1,6 @@
 ---
 title: "Marin Flow"
-# Params
-imagesrc: "https://cdn.weshargrove.com/portfolio/marin-flow.jpg"
+imagesrc: "/portfolio/marin-flow.jpg"
 orientation: landscape
 ---
 

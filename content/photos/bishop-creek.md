@@ -1,7 +1,7 @@
 ---
 title: Bishop Creek
 # Params
-imagesrc: "https://cdn.weshargrove.com/portfolio/bishop-creek.jpg"
+imagesrc: "/portfolio/bishop-creek.jpg"
 orientation: portrait
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Merced River in Winter"
-# Params
-imagesrc: "https://cdn.weshargrove.com/portfolio/merced-in-winter.jpg"
+imagesrc: "/portfolio/merced-in-winter.jpg"
 orientation: landscape
 ---
 

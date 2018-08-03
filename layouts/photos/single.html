@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="main">
   <div id="photo" class="{{ .Params.orientation }}">
-    <img src="{{ .Params.imagesrc }}" alt="{{ .Title }}" />
+    <img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{ .Title }}" />
   </div>
   <div id="description">
     <h2>{{ .Title }}</h2>
