@@ -6,6 +6,7 @@ body {
 }
 
 header > h1 > a {
+  color: black;
   text-decoration: none;
   text-decoration-color: unset;
 }
