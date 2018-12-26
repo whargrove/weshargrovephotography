@@ -9,3 +9,4 @@ publishDir = "build"
 
 [params]
   cdnUrl = "https://cdn.weshargrove.com"
+  MicroBlogUsername = "whargrove"
