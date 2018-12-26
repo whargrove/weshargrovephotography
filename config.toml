@@ -1,6 +1,7 @@
-baseurl = "https://www.weshargrove.com/"
+baseURL = "https://www.weshargrove.com/"
 languageCode = "en-US"
 title = "Wes Hargrove Photography - Landscape Photography"
+GoogleAnalytics = "UA-41377193-1"
 
 contentDir = "content"
 layoutDir = "layouts"
