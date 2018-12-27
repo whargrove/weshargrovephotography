@@ -30,12 +30,14 @@
   <link href="https://micro.blog/{{ .Site.Params.MicroBlogUsername }}" rel="me" />
   <link rel="stylesheet" href="/reset.css" />
   <link rel="stylesheet" href="/base.css" />
+  <link rel="stylesheet" href="/nav.css" />
   <link rel="stylesheet" href="/grid.css" />
 </head>
 <body>
   <header>
     <h1><a href="/">Wes Hargrove Photography</a></h1>
   </header>
+  {{ partial "header/nav.html" . }}
   {{ block "main" . }}
   {{ end }}
   <footer>
