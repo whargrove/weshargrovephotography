@@ -159,4 +159,9 @@ footer > p > a {
     padding-bottom: 1.5em;
   }
 
+  div.main#galleries {
+    padding: 1em 1em 0em 1em;
+
+  }
+
 }
