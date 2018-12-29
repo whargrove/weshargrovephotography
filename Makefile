@@ -8,7 +8,7 @@ clean:
 build: clean
 	@hugo
 
-BIND_ADDR := $(shell ipconfig getifaddr en0)
+BIND_ADDR := $(shell ipconfig getifaddr en0 || echo "127.0.0.1")
 BASE_URL := "http://${BIND_ADDR}"
 serve:
 	@hugo server --gc --bind ${BIND_ADDR} --baseURL ${BASE_URL}
