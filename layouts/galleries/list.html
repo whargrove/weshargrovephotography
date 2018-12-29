@@ -3,7 +3,7 @@
   <h1>Galleries</h1>
   {{ range (.Pages.ByParam "order") }}
   <div class="gallery">
-    <h2 class="gallery-title">{{ .Title }}</h2>
+    <a href="{{ .Permalink }}"><h2 class="gallery-title">{{ .Title }}</h2></a>
   </div>
   {{ end }}
 </div>
