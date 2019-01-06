@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="main" id="galleries">
   <h1>Galleries</h1>
-  {{ range .Pages }}
+  {{ range where .Pages "Title" "!=" "Portfolio" }}
   <div class="gallery">
     <a href="{{ .Permalink }}"><h2 class="gallery-title">{{ .Title }}</h2></a>
   </div>
