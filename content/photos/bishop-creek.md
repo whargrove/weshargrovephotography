@@ -1,8 +1,8 @@
 ---
 title: Bishop Creek
-# Params
 imagesrc: "/portfolio/bishop-creek.jpg"
 orientation: portrait
+featured: true
 ---
 
 ISO 100 70mm ƒ/16 1/2sec

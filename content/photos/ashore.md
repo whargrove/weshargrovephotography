@@ -2,6 +2,7 @@
 title: Ashore
 imagesrc: "/portfolio/ashore.jpg"
 orientation: portrait
+featured: true
 ---
 
 ISO 100, 22mm, 1.3sec at ƒ/9

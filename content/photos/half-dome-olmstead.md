@@ -2,6 +2,7 @@
 title: Half Dome, Olmstead
 imagesrc: "/portfolio/half-dome-olmstead.jpg"
 orientation: portrait
+featured: true
 ---
 
 ISO 400, 321mm, 1/6sec at ƒ/11

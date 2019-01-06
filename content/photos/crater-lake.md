@@ -2,6 +2,7 @@
 title: "Crater Lake"
 imagesrc: "/portfolio/crater-lake.jpg"
 orientation: landscape
+featured: true
 ---
 
 ISO 100 18mm ƒ/16 2sec

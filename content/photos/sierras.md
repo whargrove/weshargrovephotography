@@ -2,6 +2,7 @@
 title: Sierras
 imagesrc: "/portfolio/sierras.jpg"
 orientation: landscape
+featured: true
 ---
 
 Eastern Sierras, CA August 2017

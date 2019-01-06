@@ -2,6 +2,7 @@
 title: Modern Canyon
 imagesrc: "/portfolio/modern-canyon.jpg"
 orientation: landscape
+featured: true
 ---
 
 Los Angeles, CA April 2007

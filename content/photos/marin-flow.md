@@ -2,6 +2,7 @@
 title: "Marin Flow"
 imagesrc: "/portfolio/marin-flow.jpg"
 orientation: landscape
+featured: true
 ---
 
 ISO 100 286mm ƒ/14 8sec

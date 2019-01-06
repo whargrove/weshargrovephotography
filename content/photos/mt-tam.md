@@ -2,6 +2,7 @@
 title: "Mt Tam"
 imagesrc: "/portfolio/mt-tam.jpg"
 orientation: landscape
+featured: true
 ---
 
 ISO 100 340mm ƒ/16 60sec
