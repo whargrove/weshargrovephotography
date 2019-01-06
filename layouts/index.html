@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="main">
   <section class="grid">
-    {{ range where .Data.Pages "Section" "photos" }}
+    {{ range where .Pages "Section" "photos" }}
     <div class="thumbnail {{ .Params.orientation }}">
       <a href="{{ .Permalink }}"><img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" /></a>
     </div>
