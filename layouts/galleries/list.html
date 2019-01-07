@@ -1,11 +1,13 @@
 {{ define "main" }}
 <div class="main">
-  <h1>Galleries</h1>
   <div id="galleries">
+  <h1>Galleries</h1>
   {{ range where .Pages "Title" "!=" "Portfolio" }}
   <div class="gallery-item">
     <div class="gallery-title">
-      <h2>{{ .Title }}</h2>
+      <a href="{{ .Permalink }}">
+        <h2>{{ upper .Title }}</h2>
+      </a>
     </div>
     <div class="gallery-thumbnail">
       <a href="{{ .Permalink }}">

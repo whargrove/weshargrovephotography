@@ -31,30 +31,45 @@ header > h1 > a {
   display: flex;
 }
 
-/* #region Galleries */
-
-div#galleries {
-  padding-top: 1em;
-  padding-left: 10%;
-  padding-right: 10%;
+.main h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: .5em;
 }
+
+.main p {
+  padding-top: .5em;
+}
+
+/* #region Galleries */
 
 div.gallery-item {
   display: flex;
   flex-direction: row;
+  padding: 1em 0em 1em 0em;
+  border-bottom: 1pt solid rgb(223, 223, 223);
 }
 
 div.gallery-title {
-  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
   width: 55%;
 }
 
+.gallery-title > a > h2 {
+  color: rgb(128, 128, 128)
+}
+
 div.gallery-thumbnail {
-  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
 }
 
 div.gallery-thumbnail > a > img {
   max-height: 300px;
+  max-width: 100%;
 }
 
 /* #endregion */
@@ -72,16 +87,6 @@ div.main#not-found {
 div.main#about {
   padding-top: 0em;
   margin: 1em;
-}
-
-.main > h1 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding-bottom: .5em;
-}
-
-.main > p {
-  padding-top: .5em;
 }
 
 /* #endregion */
@@ -187,8 +192,9 @@ footer > p > a {
     padding-bottom: 1.5em;
   }
 
-  div.main#galleries {
-    padding: 1em 1em 0em 1em;
+  div.main > #galleries {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
 }
