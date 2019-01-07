@@ -46,6 +46,7 @@ header > h1 > a {
 div.gallery-item {
   display: flex;
   flex-direction: row;
+  width: 100%;
   padding: 1em 0em 1em 0em;
   border-bottom: 1pt solid rgb(223, 223, 223);
 }
@@ -60,16 +61,12 @@ div.gallery-title {
   color: rgb(128, 128, 128)
 }
 
-div.gallery-thumbnail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45%;
-}
-
-div.gallery-thumbnail > a > img {
-  max-height: 300px;
-  max-width: 100%;
+.gallery-item img {
+  object-fit: cover;
+  flex: 0 1 auto;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
 }
 
 /* #endregion */
@@ -194,6 +191,16 @@ footer > p > a {
 
   div.main > #galleries {
     padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .gallery-item img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .gallery-title {
+    flex: 1 1 auto;
     padding-right: 1rem;
   }
 
