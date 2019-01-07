@@ -3,14 +3,8 @@
   <h1>Galleries</h1>
   {{ range where .Pages "Title" "!=" "Portfolio" }}
   <div class="gallery">
-    Thumbnail: {{ println .Params.thumbnail }}
-    {{ with .Site.GetPage "/photos" }}
-      {{/* {{ with .GetPage .Params.thumbnail }}
-        <img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{ .Title }}" />
-      {{ end }} */}}
-    {{ end }}
     <a href="{{ .Permalink }}">
-    <h2 class="gallery-title">{{ .Title }}</h2>
+    <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.image_src }}" alt="{{ .Params.thumbnail.title }}" />
     </a>
   </div>
   {{ end }}

@@ -1,5 +1,7 @@
 ---
 title: "California Coast"
 slug: "california-coast"
-thumbnail: "ashore.md"
+thumbnail:
+  title: "Ashore"
+  image_src: "/california-coast/ashore.jpg"
 ---
