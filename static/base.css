@@ -194,6 +194,10 @@ footer > p > a {
     padding-right: 1rem;
   }
 
+  div.gallery-item {
+    padding: .5em 0em .5em 0em;
+  }
+
   .gallery-item img {
     width: 150px;
     height: 150px;
