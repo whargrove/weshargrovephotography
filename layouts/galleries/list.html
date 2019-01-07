@@ -11,7 +11,11 @@
     </div>
     <div class="gallery-thumbnail">
       <a href="{{ .Permalink }}">
-        <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.image_src }}" alt="{{ .Params.thumbnail.title }}" />
+        {{ if eq .Params.thumbnail.image_src nil }}
+          <img src="http://placehold.it/667x1000" />
+        {{ else }}
+          <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.image_src }}" alt="{{ .Params.thumbnail.title }}" />
+        {{ end }}
       </a>
     </div>
   </div>
