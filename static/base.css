@@ -31,6 +31,34 @@ header > h1 > a {
   display: flex;
 }
 
+/* #region Galleries */
+
+div#galleries {
+  padding-top: 1em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div.gallery-item {
+  display: flex;
+  flex-direction: row;
+}
+
+div.gallery-title {
+  flex: 0 0 auto;
+  width: 55%;
+}
+
+div.gallery-thumbnail {
+  flex: 0 0 auto;
+}
+
+div.gallery-thumbnail > a > img {
+  max-height: 300px;
+}
+
+/* #endregion */
+
 /* #region 404 */
 
 div.main#not-found {
@@ -161,7 +189,6 @@ footer > p > a {
 
   div.main#galleries {
     padding: 1em 1em 0em 1em;
-
   }
 
 }

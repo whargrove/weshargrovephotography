@@ -1,12 +1,19 @@
 {{ define "main" }}
-<div class="main" id="galleries">
+<div class="main">
   <h1>Galleries</h1>
+  <div id="galleries">
   {{ range where .Pages "Title" "!=" "Portfolio" }}
-  <div class="gallery">
-    <a href="{{ .Permalink }}">
-    <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.image_src }}" alt="{{ .Params.thumbnail.title }}" />
-    </a>
+  <div class="gallery-item">
+    <div class="gallery-title">
+      <h2>{{ .Title }}</h2>
+    </div>
+    <div class="gallery-thumbnail">
+      <a href="{{ .Permalink }}">
+        <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.image_src }}" alt="{{ .Params.thumbnail.title }}" />
+      </a>
+    </div>
   </div>
   {{ end }}
+  </div>
 </div>
 {{ end }}
