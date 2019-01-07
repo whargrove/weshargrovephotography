@@ -1,5 +1,14 @@
 {{ define "main" }}
 <main class="main">
   <h1>{{ .Title }}</h1>
+  {{ $photos := where .Site.Pages "Section" "photos" }}
+  {{ range $photos }}
+  {{ if in .Params.Galleries $.Slug }}
+  <div>
+  <h2>{{ .Title }}</h2>
+  <img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{ .Title }}" />
+  </div>
+  {{ end }}
+  {{ end }}
 </main>
 {{ end }}
