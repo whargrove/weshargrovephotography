@@ -1,17 +1,19 @@
 {{ define "main" }}
-<div class="main-gallery">
+<div class="galleries">
   {{ range where .Pages "Title" "!=" "Portfolio" }}
   <div class="gallery-item">
-    <div class="gallery-title">
-      <h2>{{ upper .Title }}</h2>
-    </div>
-    <div class="gallery-thumbnail">
-      {{ if eq .Params.thumbnail.image_src nil }}
-        <img src="http://placehold.it/667x1000" />
-      {{ else }}
-        <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.image_src }}" alt="{{ .Params.thumbnail.title }}" />
-      {{ end }}
-    </div>
+    <a href="{{ .Permalink }}">
+      <div class="gallery-title">
+        <h2>{{ upper .Title }}</h2>
+      </div>
+      <div class="gallery-thumbnail">
+        {{ if eq .Params.thumbnail.image_src nil }}
+          <img src="http://placehold.it/667x1000" />
+        {{ else }}
+          <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.image_src }}" alt="{{ .Params.thumbnail.title }}" />
+        {{ end }}
+      </div>
+    </a>
   </div>
   {{ end }}
 </div>
