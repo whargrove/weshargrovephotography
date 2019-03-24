@@ -1,7 +1,9 @@
 ---
 title: Lower Antelope
-imagesrc: "/portfolio/lower-antelope.jpg"
+imagesrc: "/us-southwest/lower-antelope.jpg"
 orientation: portrait
+featured: true
+galleries: [ "us-southwest" ]
 ---
 
 Page, AZ Oct 2007

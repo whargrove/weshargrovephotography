@@ -1,7 +1,9 @@
 ---
 title: Wrights Lake Sunrise
-imagesrc: "/portfolio/wrights-lake-sunrise.jpg"
+imagesrc: "/california-sierras/wrights-lake-sunrise.jpg"
 orientation: landscape
+featured: true
+galleries: [ "california-sierras" ]
 ---
 
 El Dorado National Forest, CA July 2018

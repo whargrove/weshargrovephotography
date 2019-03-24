@@ -1,7 +1,10 @@
 {{ define "main" }}
 <main class="main">
   <section class="grid">
-    {{ range where .Data.Pages "Section" "photos" }}
+  {{/* Show only featured photos on the main grid page */}}
+  {{ $photos := where (where .Pages "Section" "photos") ".Params.featured" "!=" nil }}
+  {{ $featuredPhotos := where $photos ".Params.featured" true }}
+  {{ range $featuredPhotos }}
     <div class="thumbnail {{ .Params.orientation }}">
       <a href="{{ .Permalink }}"><img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" /></a>
     </div>

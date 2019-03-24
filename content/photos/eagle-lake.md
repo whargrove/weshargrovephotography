@@ -1,5 +1,7 @@
 ---
 title: Eagle Lake
-imagesrc: "/portfolio/eagle-lake.jpg"
+imagesrc: "/tahoe/eagle-lake.jpg"
 orientation: portrait
+featured: true
+galleries: [ "tahoe" ]
 ---

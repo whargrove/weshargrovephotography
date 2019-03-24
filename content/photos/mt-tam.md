@@ -1,7 +1,9 @@
 ---
 title: "Mt Tam"
-imagesrc: "/portfolio/mt-tam.jpg"
+imagesrc: "/marin-headlands/mt-tam.jpg"
 orientation: landscape
+featured: true
+galleries: [ "marin-headlands" ]
 ---
 
 ISO 100 340mm ƒ/16 60sec

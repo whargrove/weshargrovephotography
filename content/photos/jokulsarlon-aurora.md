@@ -1,7 +1,9 @@
 ---
 title: "Jökulsárlón Aurora"
-imagesrc: "/portfolio/jokulsarlon-aurora.jpg"
+imagesrc: "/iceland/jokulsarlon-aurora.jpg"
 orientation: landscape
+featured: true
+galleries: [ "iceland" ]
 ---
 
 ISO 1600 24mm ƒ/1.4 8sec
