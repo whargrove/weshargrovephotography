@@ -1,8 +1,9 @@
 ---
 title: Bishop Creek Aspens
-imagesrc: "/portfolio/bishop-creek-aspens.jpg"
+imagesrc: "/california-eastern-sierras/bishop-creek-aspens.jpg"
 orientation: landscape
 featured: true
+galleries: [ "california-eastern-sierras" ]
 ---
 
 ISO 100, 67mm, 1/20sec at ƒ/11

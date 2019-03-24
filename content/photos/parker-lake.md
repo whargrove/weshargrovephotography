@@ -1,8 +1,9 @@
 ---
 title: Parker Lake
-imagesrc: "/portfolio/parker-lake.jpg"
+imagesrc: "/california-eastern-sierras/parker-lake.jpg"
 orientation: landscape
 featured: true
+galleries: [ "california-eastern-sierras" ]
 ---
 
 Eastern Sierras, CA Oct 2017

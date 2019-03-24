@@ -1,6 +1,6 @@
 ---
 title: "Merced River in Winter"
-imagesrc: "/portfolio/merced-in-winter.jpg"
+imagesrc: "/california-sierras/merced-in-winter.jpg"
 orientation: landscape
 featured: true
 galleries: [ "california-sierras" ]

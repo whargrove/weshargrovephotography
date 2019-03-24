@@ -1,8 +1,9 @@
 ---
 title: Bishop Creek
-imagesrc: "/portfolio/bishop-creek.jpg"
+imagesrc: "/california-eastern-sierras/bishop-creek.jpg"
 orientation: portrait
 featured: true
+galleries: [ "california-eastern-sierras" ]
 ---
 
 ISO 100 70mm ƒ/16 1/2sec

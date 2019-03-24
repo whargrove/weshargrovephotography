@@ -1,4 +1,0 @@
----
-title: "TX"
-slug: "tx"
----
