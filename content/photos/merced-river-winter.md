@@ -3,6 +3,7 @@ title: "Merced River in Winter"
 imagesrc: "/portfolio/merced-in-winter.jpg"
 orientation: landscape
 featured: true
+galleries: [ "california-sierras" ]
 ---
 
 ISO 100 21mm ƒ/16 31sec
