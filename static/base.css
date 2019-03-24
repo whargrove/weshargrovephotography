@@ -70,6 +70,8 @@ header > h1 > a {
 }
 
 .gallery-title h2 {
+  font-size: 2.5rem;
+  font-weight: 200;
   color: rgb(128, 128, 128)
 }
 
@@ -206,7 +208,7 @@ footer > p > a {
     padding-bottom: 1.5em;
   }
 
-  #galleries {
+  .main-gallery {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -220,9 +222,8 @@ footer > p > a {
     height: 150px;
   }
 
-  .gallery-title {
-    flex: 1 1 auto;
-    padding-right: 1rem;
+  .gallery-title h2 {
+    font-size: 1rem;
   }
 
 }
