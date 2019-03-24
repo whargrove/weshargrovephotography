@@ -43,8 +43,12 @@ header > h1 > a {
 
 /* #region Galleries */
 
-div.gallery-item {
+#galleries {
   display: flex;
+  flex-direction: column;
+}
+
+div.gallery-item {
   flex-direction: row;
   width: 100%;
   padding: 1em 0em 1em 0em;
@@ -52,12 +56,11 @@ div.gallery-item {
 }
 
 div.gallery-title {
-  display: flex;
   align-items: center;
   width: 55%;
 }
 
-.gallery-title > a > h2 {
+.gallery-title h2 {
   color: rgb(128, 128, 128)
 }
 
@@ -189,7 +192,7 @@ footer > p > a {
     padding-bottom: 1.5em;
   }
 
-  div.main > #galleries {
+  #galleries {
     padding-left: 1rem;
     padding-right: 1rem;
   }
