@@ -1,8 +1,9 @@
 ---
 title: Yucca
-imagesrc: "/portfolio/yucca.jpg"
+imagesrc: "/us-southwest/yucca.jpg"
 orientation: landscape
 featured: true
+galleries: [ "us-southwest" ]
 ---
 
 North Coyote Buttes, AZ Oct 2007

@@ -97,11 +97,17 @@ header > h1 > a {
 
 #gallery-images {
   display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .gallery-image {
   padding: .5em 0em;
+}
+
+.gallery-image a {
+  display: flex;
+  justify-content: space-around;
 }
 
 .gallery-image img {
