@@ -1,14 +1,19 @@
 {{ define "main" }}
-<main class="main">
+<main id="gallery-detail">
   <h1>{{ .Title }}</h1>
-  {{ $photos := where .Site.Pages "Section" "photos" }}
-  {{ range $photos }}
-  {{ if in .Params.Galleries $.Slug }}
-  <div>
-  <h2>{{ .Title }}</h2>
-  <img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{ .Title }}" />
+  <section id="gallery-images">
+    {{ $photos := where .Site.Pages "Section" "photos" }}
+    {{ range $photos }}
+      {{ if in .Params.Galleries $.Slug }}
+      <div class="gallery-image">
+        <a href="{{ .Permalink }}">
+          <figure>
+            <img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{ .Title }}" />
+          </figure>
+        </a>
+      </div>
+      {{ end }}
+    {{ end }}
   </div>
-  {{ end }}
-  {{ end }}
 </main>
 {{ end }}

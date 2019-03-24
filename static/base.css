@@ -85,6 +85,36 @@ header > h1 > a {
   height: 300px;
 }
 
+/* #region Gallery Detail */
+
+#gallery-detail h1 {
+  font-size: 2em;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#gallery-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery-image {
+  padding: .5em 0em;
+}
+
+.gallery-image img {
+  max-width: 100%;
+}
+
+.gallery-image h2 {
+  padding-top: .5em;
+  text-align: center;
+}
+
+/* #endregion */
+
 /* #endregion */
 
 /* #region 404 */
@@ -222,6 +252,25 @@ footer > p > a {
   .gallery-title h2 {
     font-size: 1.5em;
     padding-right: 1em;
+  }
+
+  #gallery-detail h1 {
+    font-size: 1.5em;
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+  }
+
+  .gallery-image {
+    padding: .5em 0em;
+  }
+
+  .gallery-image img {
+    max-width: 100%;
+  }
+
+  .gallery-image h2 {
+    padding-top: .5em;
+    text-align: center;
   }
 
 }
