@@ -1,3 +1,4 @@
 ---
 title: "Iceland"
+slug: "iceland"
 ---

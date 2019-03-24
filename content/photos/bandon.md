@@ -1,6 +1,6 @@
 ---
 title: Bandon
-imagesrc: "/portfolio/bandon.jpg"
+imagesrc: "/oregon/bandon.jpg"
 orientation: landscape
 featured: true
 galleries: [ "oregon" ]

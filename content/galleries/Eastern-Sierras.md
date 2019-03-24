@@ -1,3 +1,4 @@
 ---
-title: "Eastern Sierras"
+title: "California Eastern Sierras"
+slug: "california-eastern-sierras"
 ---

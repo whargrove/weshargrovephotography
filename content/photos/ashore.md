@@ -1,6 +1,6 @@
 ---
 title: Ashore
-imagesrc: "/portfolio/ashore.jpg"
+imagesrc: "/california-coast/ashore.jpg"
 orientation: portrait
 featured: true
 galleries: [ "california-coast" ]

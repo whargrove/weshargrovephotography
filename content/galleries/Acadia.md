@@ -1,3 +1,4 @@
 ---
 title: "Acadia"
+slug: "acadia"
 ---
