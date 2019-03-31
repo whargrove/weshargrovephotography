@@ -10,3 +10,6 @@ publishDir = "build"
 [params]
   cdnUrl = "https://cdn.weshargrove.com"
   MicroBlogUsername = "wes"
+
+[taxonomies]
+  gallery = "galleries"
