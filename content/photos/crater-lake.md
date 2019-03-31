@@ -2,8 +2,7 @@
 title: "Crater Lake"
 imagesrc: "/oregon/crater-lake.jpg"
 orientation: landscape
-featured: true
-galleries: [ "oregon" ]
+galleries: [ "oregon", "portfolio" ]
 ---
 
 ISO 100 18mm ƒ/16 2sec

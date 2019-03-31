@@ -2,7 +2,6 @@
 title: Wrights Lake Sunrise
 imagesrc: "/california-sierras/wrights-lake-sunrise.jpg"
 orientation: landscape
-featured: true
 galleries: [ "california-sierras" ]
 ---
 

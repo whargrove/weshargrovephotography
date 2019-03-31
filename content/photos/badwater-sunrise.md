@@ -2,7 +2,6 @@
 title: Badwater Sunrise
 imagesrc: "/death-valley/badwater-sunrise.jpg"
 orientation: landscape
-featured: false
 galleries: [ "death-valley" ]
 ---
 

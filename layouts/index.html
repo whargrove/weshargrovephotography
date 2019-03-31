@@ -1,14 +1,12 @@
 {{ define "main" }}
 <main class="main">
   <section class="grid">
-  {{/* Show only featured photos on the main grid page */}}
-  {{ $photos := where (where .Pages "Section" "photos") ".Params.featured" "!=" nil }}
-  {{ $featuredPhotos := where $photos ".Params.featured" true }}
-  {{ range $featuredPhotos }}
+  {{/* Show photos in the portfolio taxonomy */}}
+  {{ range .Site.Taxonomies.galleries.portfolio }}
     <div class="thumbnail {{ .Params.orientation }}">
       <a href="{{ .Permalink }}"><img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" /></a>
     </div>
-    {{ end }}
+  {{ end }}
   </section>
 </main>
 {{ end }}

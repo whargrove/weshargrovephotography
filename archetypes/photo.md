@@ -1,8 +1,7 @@
 ---
-title: New Photo
-imagesrc: "/portfolio/new-photo.jpg"
+title: Photo Name
+imagesrc: "/gallery-name/photo-name.jpg"
 orientation: landscape
-featured: false
 galleries: []
 ---
 

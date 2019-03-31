@@ -2,8 +2,7 @@
 title: Modern Canyon
 imagesrc: "/walt-disney-concert-hall/modern-canyon.jpg"
 orientation: landscape
-featured: true
-galleries: [ "walt-disney-concert-hall" ]
+galleries: [ "walt-disney-concert-hall", "portfolio" ]
 ---
 
 Los Angeles, CA April 2007

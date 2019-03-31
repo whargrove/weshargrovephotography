@@ -2,7 +2,6 @@
 title: Death Valley
 imagesrc: "/death-valley/death-valley.jpg"
 orientation: landscape
-featured: false
 galleries: [ "death-valley" ]
 ---
 

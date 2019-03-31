@@ -2,8 +2,7 @@
 title: Trolls
 imagesrc: "/iceland/trolls.jpg"
 orientation: landscape
-featured: true
-galleries: [ "iceland" ]
+galleries: [ "iceland", "portfolio" ]
 ---
 
 Vík, Iceland April 2017

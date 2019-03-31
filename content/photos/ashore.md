@@ -2,8 +2,7 @@
 title: Ashore
 imagesrc: "/california-coast/ashore.jpg"
 orientation: portrait
-featured: true
-galleries: [ "california-coast" ]
+galleries: [ "california-coast", "portfolio" ]
 ---
 
 ISO 100, 22mm, 1.3sec at ƒ/9

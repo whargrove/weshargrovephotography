@@ -2,7 +2,6 @@
 title: Well Trodden
 imagesrc: "/death-valley/well-trodden.jpg"
 orientation: landscape
-featured: false
 galleries: [ "death-valley" ]
 ---
 

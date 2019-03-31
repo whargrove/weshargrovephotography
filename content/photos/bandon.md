@@ -2,8 +2,7 @@
 title: Bandon
 imagesrc: "/oregon/bandon.jpg"
 orientation: landscape
-featured: true
-galleries: [ "oregon" ]
+galleries: [ "oregon", "portfolio" ]
 ---
 
 ISO 100, 28mm, 8.0sec at ƒ/16
