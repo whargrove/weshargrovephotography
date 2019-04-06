@@ -2,17 +2,15 @@
 <main id="gallery-detail">
   <h1>{{ .Title }}</h1>
   <section id="gallery-images">
-    {{/* TODO: Get photos in this gallery by taxonomy */}}
-    {{ $photos := where .Site.Pages "Section" "photos" }}
-    {{ range $photos }}
-      {{ if in .Params.Galleries $.Slug }}
-      <div class="gallery-image">
-        <a href="{{ .Permalink }}">
-          <figure>
-            <img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{ .Title }}" />
-          </figure>
-        </a>
-      </div>
+    {{ with $gallery := index .Site.Taxonomies.galleries $.Slug }}
+      {{ range $gallery.Pages }}
+        <div class="gallery-image">
+          <a href="{{ .Permalink }}">
+            <figure>
+              <img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{ .Title }}" />
+            </figure>
+          </a>
+        </div>
       {{ end }}
     {{ end }}
   </div>
