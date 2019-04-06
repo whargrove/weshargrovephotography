@@ -2,8 +2,7 @@
 title: Half Dome, Olmstead
 imagesrc: "/california-sierras/half-dome-olmstead.jpg"
 orientation: portrait
-featured: true
-galleries: [ "california-sierras" ]
+galleries: [ "california-sierras", "portfolio" ]
 ---
 
 ISO 400, 321mm, 1/6sec at ƒ/11

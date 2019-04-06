@@ -2,7 +2,6 @@
 title: Zabriske
 imagesrc: "/death-valley/zabriske.jpg"
 orientation: landscape
-featured: false
 galleries: [ "death-valley" ]
 ---
 

@@ -2,8 +2,7 @@
 title: Sierras
 imagesrc: "/california-eastern-sierras/sierras.jpg"
 orientation: landscape
-featured: true
-galleries: [ "california-eastern-sierras" ]
+galleries: [ "california-eastern-sierras", "portfolio" ]
 ---
 
 Eastern Sierras, CA August 2017

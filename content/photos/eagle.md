@@ -2,8 +2,7 @@
 title: Eagle
 imagesrc: "/california-sierras/eagle.jpg"
 orientation: landscape
-featured: true
-galleries: [ "california-sierras" ]
+galleries: [ "california-sierras", "portfolio" ]
 ---
 
 Expired Fujifilm Superia 400
