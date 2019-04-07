@@ -11,7 +11,7 @@ build: clean
 BIND_ADDR := $(shell ipconfig getifaddr en0 || echo "127.0.0.1")
 BASE_URL := "http://${BIND_ADDR}"
 serve:
-	@hugo server --templateMetricsHints --noHTTPCache --disableFastRender --gc --bind ${BIND_ADDR} --baseURL ${BASE_URL}
+	@hugo server --debug --verboseLog --disableFastRender --gc --noHTTPCache --templateMetrics --templateMetricsHints --bind ${BIND_ADDR} --baseURL ${BASE_URL}
 
 upload:
 	az storage blob upload-batch -d "\$$web" --account-name weshargrovephoto -s ./build --pattern "*"
