@@ -4,7 +4,7 @@
   {{/* Show photos in the portfolio taxonomy */}}
   {{ range .Site.Taxonomies.galleries.portfolio }}
     <div class="thumbnail {{ .Params.orientation }}">
-      <a href="{{ .Permalink }}"><img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" /></a>
+      <a href="{{ .Permalink }}"><img class="lazy-load" src="" data-src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{.Title}}"/></a>
     </div>
   {{ end }}
   </section>
