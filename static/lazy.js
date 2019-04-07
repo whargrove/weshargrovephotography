@@ -17,7 +17,6 @@ let observer = new IntersectionObserver( onChange, {
 function onChange( changes ) {
   changes.forEach( change => {
     if ( change.isIntersecting ) {
-      change.target.classList.add( 'visible' );
       change.target.src = change.target.dataset.src;
       observer.unobserve( change.target );
     }
