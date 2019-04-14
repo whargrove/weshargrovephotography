@@ -2,7 +2,7 @@
 title: Manhattan Sun Breaks
 imagesrc: "/nyc/manhattan-sun-breaks.jpg"
 orientation: landscape
-galleries: [ "nyc", "portfolio" ]
+galleries: [ "new-york-city", "portfolio" ]
 ---
 
 ISO 100, 24mm, 1/160sec at ƒ/8.0

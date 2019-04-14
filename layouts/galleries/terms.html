@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="galleries">
-  {{ range where .Pages "Section" "galleries" }}
+  {{/* Exclude portfolio from the gallery listing */}}
+  {{ range where .Pages "Title" "!=" "Portfolio" }}
   <div class="gallery-item">
     <a href="{{ .Permalink }}">
       <div class="gallery-title">
