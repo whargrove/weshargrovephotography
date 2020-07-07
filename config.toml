@@ -1,14 +1,13 @@
 baseURL = "https://www.weshargrove.com/"
 languageCode = "en-US"
 title = "Wes Hargrove Photography - Landscape Photography"
-GoogleAnalytics = "UA-41377193-1"
 
 contentDir = "content"
 layoutDir = "layouts"
 publishDir = "build"
 
 [params]
-  cdnUrl = "https://cdn.weshargrove.com"
+  cdnUrl = "https://weshargrovephoto.blob.core.windows.net/photos/"
   MicroBlogUsername = "wes"
 
 [taxonomies]

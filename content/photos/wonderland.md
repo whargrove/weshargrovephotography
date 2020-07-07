@@ -1,8 +1,8 @@
 ---
 title: Wonderland
-imagesrc: "/acadia/wonderland.jpg"
+imagesrc: "water/wonderland.jpg"
 orientation: portrait
-galleries: [ "seascapes" ]
+galleries: [ "water", "portfolio" ]
 ---
 
 ISO 100, 21.0 mm, 1.3 sec at ƒ/16.0

@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns#">
 <head>
-  {{ if .Site.IsServer }}
-  <!-- Google analytics disabled for development -->
-  {{ else }}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', {{ .Site.GoogleAnalytics }});
-  </script>
-  {{ end }}
   {{ if .IsPage }}
   <title>{{ .Title}} &#124; {{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Title }} &#124; {{ .Site.Title }}" />
