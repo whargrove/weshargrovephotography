@@ -138,8 +138,24 @@ div.main#not-found {
 /* #region About */
 
 div.main#about {
-  padding-top: 0em;
+  padding-top: 1em;
   margin: 1em;
+}
+
+/* #endregion */
+
+/* #region Newsletter */
+
+div.main#newsletter {
+  padding-top: 1em;
+  margin: 1em;
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 100%;
 }
 
 /* #endregion */
