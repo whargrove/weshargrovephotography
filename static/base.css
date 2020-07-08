@@ -8,13 +8,41 @@
   display:none;
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  padding: 2em;
-  padding-bottom: 0;
-  margin: 1em;
+html {
+  font-size: 100%;
 }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.65;
+  padding: 2rem;
+  padding-bottom: 0;
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {font-size: 2.441em;}
+
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
+
+p {margin-bottom: 1.15rem;}
 
 header > h1 > a {
   color: black;
@@ -26,63 +54,37 @@ header > h1 > a:visited {
   color: black;
 }
 
-header > h1 > a {
-  font-size: 3rem;
-  font-weight: 200;
-}
-
 .main {
+  margin: 1em;
   display: flex;
-}
-
-.main h1 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding-bottom: .5em;
-}
-
-.main p {
-  padding-top: .5em;
 }
 
 /* #region Galleries */
 
-.galleries {
+.galleries-container {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-/* gallery-item is a flex item in .galleries, but don't apply display:flex; here because the only child
-   is <a> so instead apply display:flex; to .gallery-item a so that elements descending from .gallery-item a
-   have flex applied to them. */
 .gallery-item {
-  padding: 1em 0em;
-  border-bottom: 1pt solid rgb(223, 223, 223);
+  padding-bottom: 1em;
 }
 
 .gallery-item a {
   display: flex;
-  justify-content: space-between;
+  flex-flow: column nowrap;
 }
 
-.gallery-title {
-  display: flex;
-  flex: 1 0 calc(50% - 1em);
-  align-items: center;
-}
-
-.gallery-title h2 {
-  font-size: 2.5rem;
-  font-weight: 200;
-  color: rgb(99, 99, 99)
-}
-
-.gallery-thumbnail {
-  flex: 0 1 auto;
+.gallery-item p {
+  text-align: center;
+  padding-top: .5em;
+  margin-bottom: 0;
 }
 
 .gallery-item img {
-  flex: 1 0 auto;
+  padding-left: .5em;
+  padding-right: .5em;
   object-fit: cover;
   overflow: hidden;
   width: 300px;
@@ -91,11 +93,8 @@ header > h1 > a {
 
 /* #region Gallery Detail */
 
-#gallery-detail h1 {
-  font-size: 2em;
-  font-weight: 200;
+#gallery-detail h2 {
   text-align: center;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -111,16 +110,17 @@ header > h1 > a {
 
 .gallery-image a {
   display: flex;
+  flex-flow: column;
   justify-content: space-around;
 }
 
-.gallery-image img {
-  max-width: 100%;
+.gallery-image p {
+  margin: 0 auto;
 }
 
-.gallery-image h2 {
-  padding-top: .5em;
-  text-align: center;
+.gallery-image figure {
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 /* #endregion */
@@ -129,32 +129,17 @@ header > h1 > a {
 
 /* #region 404 */
 
-div.main#not-found {
-  margin: 1em;
-}
-
 /* #endregion */
 
 /* #region About */
-
-div.main#about {
-  padding-top: 1em;
-  margin: 1em;
-}
 
 /* #endregion */
 
 /* #region Newsletter */
 
-div.main#newsletter {
-  padding-top: 1em;
-  margin: 1em;
-}
-
 #mc_embed_signup {
   background: #fff;
   clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
   width: 100%;
 }
 
@@ -163,18 +148,15 @@ div.main#newsletter {
 /* #region Footer */
 
 footer {
-  margin-top: 1em;
-  padding: 1em;
-  min-height: 2.25em;
+  padding-bottom: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: rgba(0, 0, 0, 0.6);
-  font-size: .85em;
 }
 
-footer > p > a {
+footer > small > a {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: underline;
 }
@@ -209,30 +191,20 @@ footer > p > a {
 }
 
 #description {
-  padding-top: 1em;
-  margin: 0 auto;
   text-align: center;
-}
-
-#description > h2 {
-  font-size: 2rem;
-  font-weight: 200;
-  margin-bottom: 0.5rem;
-}
-
-#description > p {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 1rem;
-  font-weight: 200;
-  font-style: italic;
 }
 
 /* #endregion */
 
 @media only screen and (max-width: 800px) {
+
   body {
     margin: 0;
     padding: 0;
+  }
+
+  h1, h2, h3, h4, h5 {
+    margin-top: 0;
   }
 
   header {
@@ -242,23 +214,7 @@ footer > p > a {
   }
 
   .main {
-    padding-top: 1em;
-  }
-
-  header > h1 > a {
-    font-size: 2rem;
-  }
-
-  #description > h2 {
-    font-size: 1.5rem;
-  }
-
-  #description > p {
-    font-size: 0.75rem;
-  }
-
-  footer {
-    padding-bottom: 1.5em;
+    padding-top: 0;
   }
 
   .galleries {
@@ -266,37 +222,21 @@ footer > p > a {
     padding-right: 1rem;
   }
 
-  .gallery-item {
-    padding: .5em 0em .5em 0em;
-  }
-
   .gallery-item img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
   }
 
-  .gallery-title h2 {
-    font-size: 1.5em;
-    padding-right: 1em;
-  }
-
-  #gallery-detail h1 {
-    font-size: 1.5em;
-    margin-top: .5rem;
-    margin-bottom: .25rem;
-  }
-
-  .gallery-image {
-    padding: .5em 0em;
+  #gallery-detail {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .gallery-image img {
     max-width: 100%;
   }
 
-  .gallery-image h2 {
-    padding-top: .5em;
-    text-align: center;
+  footer {
+    padding-bottom: 1em;
   }
 
 }
