@@ -7,7 +7,7 @@ layoutDir = "layouts"
 publishDir = "build"
 
 [params]
-  cdnUrl = "https://weshargrovephoto.blob.core.windows.net/photos/"
+  cdnUrl = "https://cdn.weshargrove-photos.net/"
   MicroBlogUsername = "wes"
 
 [taxonomies]
