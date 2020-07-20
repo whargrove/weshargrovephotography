@@ -10,7 +10,7 @@
   <title>{{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
-  <meta property="og:image" content="https://cdn.weshargrove.com/portfolio/merced-in-winter.jpg" />
+  <meta property="og:image" content="https://cdn.weshargrove-photos.net/mountain/valley-view-winter.jpg" />
   {{ end }}
   <meta property="og:type" content="website" />
   <meta charset="UTF-8" />
@@ -32,5 +32,11 @@
   {{ block "main" . }}
   {{ end }}
   {{ partial "footer/footer.html" . }}
+  <script>
+    if (window.location.host !== 'www.weshargrove.com')
+        window.goatcounter = {no_onload: true}
+  </script>
+  <script data-goatcounter="https://weshargrovephotography.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
