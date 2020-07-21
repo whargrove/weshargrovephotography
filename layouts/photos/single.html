@@ -4,7 +4,8 @@
     <img src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}" alt="{{ .Title }}" />
   </div>
   <div id="description">
-    <p>{{ .Title }}</p>
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Content }}</p>
   </div>
 </main>
 {{ end }}
