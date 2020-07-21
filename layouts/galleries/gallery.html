@@ -1,6 +1,7 @@
 {{ define "main" }}
 <main id="gallery-detail">
   <h2>{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
   <section id="gallery-images">
     {{ with $gallery := index .Site.Taxonomies.galleries $.Slug }}
       {{ range $gallery.Pages }}
