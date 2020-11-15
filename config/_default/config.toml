@@ -2,15 +2,12 @@ baseURL = "https://www.weshargrove.com/"
 languageCode = "en-US"
 title = "Wes Hargrove Photography - Landscape Photography"
 
+configDir = "config"
 contentDir = "content"
 layoutDir = "layouts"
 publishDir = "build"
 
 rssLimit = 10
-
-[params]
-  cdnUrl = "https://cdn.weshargrove-photos.net/"
-  MicroBlogUsername = "wes"
 
 [taxonomies]
   gallery = "galleries"

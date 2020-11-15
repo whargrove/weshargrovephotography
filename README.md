@@ -20,3 +20,13 @@ make serve
 ```zsh
 make deploy
 ```
+
+## Misc
+
+Rename files from STDIN with bash.
+
+Forces (for case insensitive filesystems 🛎) rename and replaces ' with empty char and space with hyphen.
+
+```bash
+rename -f -c -S "'" "" -S " " "-"
+```

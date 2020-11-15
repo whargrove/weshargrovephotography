@@ -5,7 +5,7 @@
     {{ range where .Pages.ByTitle ".Title" "!=" "portfolio" }}
     <div class="gallery-item">
       <a href="{{ .Permalink }}">
-        <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.src }}" alt="{{ .Params.thumbnail.title }}" />
+        <img src="{{ .Site.Params.photoBaseUrl }}{{ .Params.thumbnail.src }}" alt="{{ .Params.thumbnail.title }}" />
         <p>{{ .Title }}</p>
       </a>
     </div>

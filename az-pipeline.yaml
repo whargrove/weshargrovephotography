@@ -30,7 +30,7 @@ steps:
 
 - bash: |
    export PATH=$PATH:$HOME/bin
-   hugo -d ./build
+   hugo --environment production -d ./build
   displayName: 'Build Website'
   env:
     ARTIFACT_STAGING_DIR: $(Build.ArtifactStagingDir)

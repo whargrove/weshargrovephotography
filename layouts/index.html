@@ -4,7 +4,7 @@
   {{ range .Site.Taxonomies.galleries.portfolio.Pages.ByWeight }}
     <figure class="thumbnail {{ .Params.orientation }}">
       <a href="{{ .Permalink }}">
-        <img class="lazy-load" src="" data-src="{{ .Site.Params.CdnUrl }}{{ .Params.imagesrc }}"/>
+        <img class="lazy-load" src="" data-src="{{ .Site.Params.photoBaseUrl }}{{ .Params.imagesrc }}"/>
         <figcaption>{{ .Title }}</figcaption>
       </a>
     </figure>
