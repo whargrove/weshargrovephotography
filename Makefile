@@ -14,7 +14,7 @@ serve:
 	@hugo server --debug --verboseLog --disableFastRender --gc --noHTTPCache --templateMetrics --templateMetricsHints --bind ${BIND_ADDR} --baseURL ${BASE_URL}
 
 upload:
-	az storage blob upload-batch -d "\$$web" --account-name weshargrovephoto -s ./build --pattern "*"
+	az storage blob upload-batch -d "\$$web" --account-name weshargrovephotography -s ./build --pattern "*"
 
 purge:
 	az cdn endpoint purge -g weshargrove-photography-rg --profile-name weshargrovephotography -n weshargroveweb --content-paths "/*"
