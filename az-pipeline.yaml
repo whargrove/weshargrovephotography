@@ -1,0 +1,42 @@
+pool:
+  name: Azure Pipelines
+steps:
+- task: GoTool@0
+  displayName: 'Install Go'
+  inputs:
+    version: 1.14.4
+
+- task: DownloadGitHubRelease@0
+  displayName: 'Download Hugo'
+  inputs:
+    connection: whargrove
+    userRepository: gohugoio/hugo
+    defaultVersionType: specificVersion
+    version: 27837935
+    itemPattern: 'hugo_0.73.0_Linux-64bit.tar.gz'
+
+- bash: |
+   mkdir -p $HOME/bin
+   export PATH=$PATH:$HOME/bin
+   cd $HOME/bin
+   tar -xvzf $ARTIFACTS_DIR/hugo_0.73.0_Linux-64bit.tar.gz
+   hugo version
+  failOnStderr: true
+  displayName: 'Install Hugo'
+  env:
+    ARTIFACTS_DIR: $(System.ArtifactsDirectory)
+
+- bash: |
+   export PATH=$PATH:$HOME/bin
+   hugo -d ./build
+  displayName: 'Build Website'
+  env:
+    ARTIFACT_STAGING_DIR: $(Build.ArtifactStagingDir)
+
+- task: AzureCLI@2
+  displayName: 'Upload to $web'
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise (d2a733d0-be09-4fd7-b1b4-9e1f74eb88c9)'
+    scriptType: bash
+    scriptLocation: inlineScript
+    inlineScript: 'az storage blob upload-batch -d "\$web" --account-name weshargrovephoto -s ./build --pattern "*"'
