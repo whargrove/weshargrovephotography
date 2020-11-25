@@ -36,7 +36,7 @@ steps:
 - task: AzureCLI@2
   displayName: 'Upload to $web'
   inputs:
-    azureSubscription: 'Visual Studio Enterprise (d2a733d0-be09-4fd7-b1b4-9e1f74eb88c9)'
+    azureSubscription: 'a706ee96-4594-47a5-9099-793d4a3225a5'
     scriptType: bash
     scriptLocation: inlineScript
-    inlineScript: 'az storage blob upload-batch -d "\$web" --account-name weshargrovephoto -s ./build --pattern "*"'
+    inlineScript: 'az storage blob upload-batch -s ./build -d "\$web" --account-name weshargrovephotography --pattern "*"'
