@@ -1,8 +1,8 @@
 ---
 title: Alabama Hills 3
-imagesrc: "desert/alabama-hills-3.jpg"
+imagesrc: "mountain/alabama-hills-3.jpg"
 orientation: landscape
-galleries: ["desert","portfolio"]
+galleries: ["mountain","portfolio"]
 ---
 
 [Buy this print](https://weshargrovephotography.square.site/product/alabama-hills-3/14).

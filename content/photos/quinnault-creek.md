@@ -1,8 +1,8 @@
 ---
 title: Quinnault Creek
-imagesrc: "mountain/quinnault-creek.jpg"
+imagesrc: "water/quinnault-creek.jpg"
 orientation: portrait
-galleries: ["mountain","portfolio"]
+galleries: ["water","portfolio"]
 ---
 
 [Buy this print](https://weshargrovephotography.square.site/product/quinnault-creek/20).
