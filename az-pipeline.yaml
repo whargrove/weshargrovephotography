@@ -1,5 +1,6 @@
+name: 'Wes Hargrove Photography'
 pool:
-  name: Azure Pipelines
+  vmImage: 'ubuntu-20.04'
 steps:
 - task: GoTool@0
   displayName: 'Install Go'
