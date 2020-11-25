@@ -17,7 +17,7 @@ upload:
 	az storage blob upload-batch -d "\$$web" --account-name weshargrovephoto -s ./build --pattern "*"
 
 purge:
-	az cdn endpoint purge --profile-name weshargrovephoto --name weshargrove --content-paths "/*"
+	az cdn endpoint purge -g weshargrove-photography-rg --profile-name weshargrovephotography -n weshargroveweb --content-paths "/*"
 
 deploy: build upload purge
 	@echo "Deployment done! https://www.weshargrove.com/"
