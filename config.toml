@@ -6,6 +6,8 @@ contentDir = "content"
 layoutDir = "layouts"
 publishDir = "build"
 
+rssLimit = 10
+
 [params]
   cdnUrl = "https://cdn.weshargrove-photos.net/"
   MicroBlogUsername = "wes"

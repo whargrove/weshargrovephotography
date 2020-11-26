@@ -1,5 +1,5 @@
 ---
-title: Newsletter
+title: Galleries
 outputs:
 - HTML
 ---

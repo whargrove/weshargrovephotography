@@ -1,5 +1,7 @@
 ---
-title: "About"
+title: About
+outputs:
+- HTML
 ---
 
 Wes Hargrove is a landscape photographer, a tech nerd, an outdoor enthusiast, and an avid traveler.

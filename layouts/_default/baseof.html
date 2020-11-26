@@ -15,6 +15,9 @@
   <meta property="og:type" content="website" />
   <meta charset="UTF-8" />
   <meta name='viewport' content="width=device-width">
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
   <link href="https://micro.blog/{{ .Site.Params.MicroBlogUsername }}" rel="me" />
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="/reset.css" />
