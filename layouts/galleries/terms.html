@@ -2,7 +2,7 @@
 <div class="main">
   <h2>Galleries</h2>
   <div class="galleries-container">
-    {{ range where .Pages ".Title" "!=" "portfolio" }}
+    {{ range where .Pages.ByTitle ".Title" "!=" "portfolio" }}
     <div class="gallery-item">
       <a href="{{ .Permalink }}">
         <img src="{{ .Site.Params.CdnUrl }}{{ .Params.thumbnail.src }}" alt="{{ .Params.thumbnail.title }}" />

@@ -4,7 +4,7 @@
   <p>{{ .Content }}</p>
   <section id="gallery-images">
     {{ with $gallery := index .Site.Taxonomies.galleries $.Slug }}
-      {{ range $gallery.Pages }}
+      {{ range $gallery.Pages.ByTitle }}
         <div class="gallery-image">
           <a href="{{ .Permalink }}">
             <figure>
