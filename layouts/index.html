@@ -1,7 +1,6 @@
 {{ define "main" }}
 <main class="main">
   <section class="grid">
-  {{/* Show photos in the portfolio taxonomy */}}
   {{ range .Site.Taxonomies.galleries.portfolio }}
     <figure class="thumbnail {{ .Params.orientation }}">
       <a href="{{ .Permalink }}">
