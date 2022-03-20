@@ -5,7 +5,7 @@ steps:
 - task: GoTool@0
   displayName: 'Install Go'
   inputs:
-    version: '1.15.5'
+    version: '1.18'
 
 - task: DownloadGitHubRelease@0
   displayName: 'Download Hugo'
@@ -13,15 +13,15 @@ steps:
     connection: 'GitHub'
     userRepository: 'gohugoio/hugo'
     defaultVersionType: 'specificVersion'
-    version: '33907180'
-    itemPattern: 'hugo_0.78.2_Linux-64bit.tar.gz'
+    version: '62009208'
+    itemPattern: 'hugo_0.95.0_Linux-64bit.tar.gz'
     downloadPath: '$(System.ArtifactsDirectory)'
 
 - bash: |
    mkdir -p $HOME/bin
    export PATH=$PATH:$HOME/bin
    cd $HOME/bin
-   tar -xvzf $ARTIFACTS_DIR/hugo_0.78.2_Linux-64bit.tar.gz
+   tar -xvzf $ARTIFACTS_DIR/hugo_0.95.0_Linux-64bit.tar.gz
    hugo version
   failOnStderr: true
   displayName: 'Install Hugo'
@@ -42,3 +42,10 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage blob upload-batch -s ./build -d "\$web" --account-name weshargrovephotography --pattern "*"'
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise Subscription (a706ee96-4594-47a5-9099-793d4a3225a5)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az cdn endpoint purge -g weshargrove-photography-rg --profile-name weshargrovephotography -n weshargroveweb --content-paths "/*"'
