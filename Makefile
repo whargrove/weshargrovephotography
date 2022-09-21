@@ -14,7 +14,7 @@ serve:
 	@hugo server --environment staging --debug --verboseLog --disableFastRender --gc --noHTTPCache --templateMetrics --templateMetricsHints --bind ${BIND_ADDR} --baseURL ${BASE_URL}
 
 upload: build-prod
-	az storage blob upload-batch -d "\$$web" --account-name weshargrovephotography -s ./build --pattern "*"
+	az storage blob upload-batch -d "\$$web" --account-name weshargrovephotography -s ./build --pattern "*" --overwrite true
 
 build-prod: clean
 	@hugo --environment production

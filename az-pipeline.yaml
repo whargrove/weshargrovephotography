@@ -41,7 +41,7 @@ steps:
     azureSubscription: 'Visual Studio Enterprise Subscription (a706ee96-4594-47a5-9099-793d4a3225a5)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az storage blob upload-batch -s ./build -d "\$web" --account-name weshargrovephotography --pattern "*"'
+    inlineScript: 'az storage blob upload-batch -s ./build -d "\$web" --account-name weshargrovephotography --pattern "*" --overwrite true'
 
 - task: AzureCLI@2
   displayName: 'Purge CDN endpoint'
