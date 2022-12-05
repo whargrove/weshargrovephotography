@@ -38,7 +38,7 @@ steps:
 - task: AzureCLI@2
   displayName: 'Upload to $web'
   inputs:
-    azureSubscription: 'Visual Studio Enterprise Subscription (a706ee96-4594-47a5-9099-793d4a3225a5)'
+    azureSubscription: 'az'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage blob upload-batch -s ./build -d "\$web" --account-name weshargrovephotography --pattern "*" --overwrite true'
@@ -46,7 +46,7 @@ steps:
 - task: AzureCLI@2
   displayName: 'Purge CDN endpoint'
   inputs:
-    azureSubscription: 'Visual Studio Enterprise Subscription (a706ee96-4594-47a5-9099-793d4a3225a5)'
+    azureSubscription: 'az'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az cdn endpoint purge -g weshargrove-photography-rg --profile-name weshargrovephotography -n weshargroveweb --content-paths "/*"'
