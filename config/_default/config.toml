@@ -7,7 +7,7 @@ contentDir = "content"
 layoutDir = "layouts"
 publishDir = "build"
 
-rssLimit = 10
+rssLimit = 25
 
 [taxonomies]
   gallery = "galleries"
