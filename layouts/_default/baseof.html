@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns#">
-<head>{{ if .IsPage }}
+
+<head>
+  {{ if .IsPage }}
   <title>{{ .Title}} &#124; {{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Title }} &#124; {{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:image" content="{{ .Site.Params.photoBaseUrl }}{{ .Params.imagesrc }}" />
+  {{ else if eq .Kind "term"}}
+  <title>{{ .Title}} Gallery &#124; {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title}} Gallery &#124; {{ .Site.Title }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="{{ .Site.Params.photoBaseUrl }}{{ .Params.thumbnail.src }}" />
   {{ else }}
   <title>{{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
-  <meta property="og:image" content="{{ .Site.Params.photoBaseUrl }}mountain/valley-view-winter.jpg" />{{ end }}
+  <meta property="og:image" content="{{ .Site.Params.photoBaseUrl }}mountain/valley-view-winter.jpg" />
+  {{ end }}
   <meta property="og:type" content="website" />
   <meta charset="UTF-8" />
   <meta name='viewport' content="width=device-width">
   {{ with .OutputFormats.Get "rss" -}}
-  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
   <link href="https://micro.blog/{{ .Site.Params.MicroBlogUsername }}" rel="me" />
   <link rel="icon" href="data:,">{{ $style := resources.Get "css/main.css" | minify | fingerprint }}
@@ -22,6 +31,7 @@
   <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
   <script async src="/lazy.js"></script>
 </head>
+
 <body>
   <header>
     <h1><a href="/">Wes Hargrove Photography</a></h1>
@@ -31,4 +41,5 @@
   {{ end }}
   {{ partial "footer/footer.html" . }}
 </body>
+
 </html>
