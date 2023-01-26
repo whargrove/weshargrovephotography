@@ -7,3 +7,5 @@ thumbnail:
 outputs:
 - HTML
 ---
+
+[Buy prints from this gallery](https://weshargrovephotography.square.site/shop/yellowstone-prints/12).

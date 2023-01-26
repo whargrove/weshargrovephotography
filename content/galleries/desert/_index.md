@@ -8,4 +8,4 @@ outputs:
 - HTML
 ---
 
-[Buy prints from this gallery](https://weshargrovephotography.square.site/shop/desert-prints/4).
+[Buy prints from this gallery](https://weshargrovephotography.square.site/shop/desert-prints/6).
