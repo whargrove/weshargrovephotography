@@ -5,3 +5,5 @@ orientation: landscape
 galleries: ['yellowstone']
 date: "2023-01-22"
 ---
+
+[Buy this print](https://weshargrovephotography.square.site/product/waiting-for-the-snow-to-pass/64).
