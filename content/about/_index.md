@@ -4,6 +4,6 @@ outputs:
 - HTML
 ---
 
-Wes Hargrove is a landscape photographer, a tech nerd, an outdoor enthusiast, and an avid traveler.
+Wes Hargrove is a software engineer by day, landscape and wildlife photographer, outdoor enthusiast, and an avid reader.
 
-He lives in Missoula with his wife and dog.
+He lives in Missoula Montana with his wife and son.
