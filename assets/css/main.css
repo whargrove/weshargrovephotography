@@ -243,6 +243,10 @@ footer > small > a {
   text-align: center;
 }
 
+#description > p > a {
+  text-decoration: underline;
+}
+
 /* #endregion */
 
 @media only screen and (max-width: 800px) {
