@@ -2,8 +2,8 @@
 title: "Avian"
 slug: "avian"
 thumbnail:
-  title: "Northern Pygmy-owl"
-  src: "avian/northern-pygmy-owl.jpg"
+  title: "Mouthful"
+  src: "avian/mouthful.jpg"
 outputs:
 - HTML
 ---
