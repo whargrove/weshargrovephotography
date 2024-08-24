@@ -1,5 +1,7 @@
 # Wes Hargrove Photography
 
+[![Build Status](https://whargrove.visualstudio.com/Wes%20Hargrove%20Photography/_apis/build/status%2FWes%20Hargrove%20Photography?branchName=master)](https://whargrove.visualstudio.com/Wes%20Hargrove%20Photography/_build/latest?definitionId=1&branchName=master)
+
 ## How to Build
 
 ```zsh
